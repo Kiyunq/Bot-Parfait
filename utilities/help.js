@@ -18,7 +18,7 @@ module.exports = {
         if (pf == null) pf = config.app.px
 
         let img = db.fetch(`img_${message.guild.id}`)
-        if (img == null) img = "https://images-ext-2.discordapp.net/external/vmRn6HAYfmvTxjBcHC_qCsO0JYWfL_41FJ3oar6NpT0/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1138553067386699897/cc29879c090a8856aba6d194f508a479.png"
+        if (img == null) img = "https://cdn.discordapp.com/attachments/1325208248256696421/1325225879835508858/442580f2868f66e09e6c36bbb5e919f2.jpeg?ex=677b0447&is=6779b2c7&hm=46715c4563b0757f52e56aeab35e904844a7194f34abf341813d838834f7461f&"
 
         let color = cl.fetch(`color_${message.guild.id}`)
         if (color == null) color = config.app.color
