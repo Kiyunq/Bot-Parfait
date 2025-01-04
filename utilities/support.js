@@ -14,11 +14,11 @@ module.exports = {
 
         const embed = new MessageEmbed()
             .setColor(color)
-            .setDescription(`Pour rejoindre notre support [cliquez ici](https://discord.gg/YesU79pV5D) \n** Crédits : Naoki Reworked by AFTERNATH`)
-            .setFooter({ text: `AFTERNATH` })
+            .setDescription(`Pour rejoindre notre support [cliquez ici](https://discord.gg/wazaaa) \n** Crédits : Wazaaa Reworked by Kiyun`)
+            .setFooter({ text: `Wazaaa` })
 
         //message.reply({ content: ':white_check_mark:' })
         message.react('💎')
-        message.member.send({ content: `https://discord.gg/YesU79pV5D`, embeds: [embed] });
+        message.member.send({ content: `https://discord.gg/Wazaaa`, embeds: [embed] });
     }
 }
