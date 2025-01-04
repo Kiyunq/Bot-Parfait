@@ -17,7 +17,7 @@ module.exports = {
 
         if (!args[0]) {
             return message.channel.send(
-                "Mentionne le membre à Pirater <a:aPES_Hacker:988153147191091311>"
+                "Mentionne le membre à Pirater <a:hack:1325210216941486190>"
             );
         }
         const tohack = message.mentions.members.first();
