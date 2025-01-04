@@ -14,11 +14,11 @@ module.exports = {
 
         const embed = new MessageEmbed()
             .setColor(color)
-            .setDescription(`Pour pouvoir heberger ce bot pour vous, allez download le code sur [github](https://discord.gg/YesU79pV5D) \n** Crédits : Naoki Reworked by AFTERNATH**`)
-            .setFooter({ text: `AFTERNATH` })
+            .setDescription(`.gg/wazaa`)
+            .setFooter({ text: `Wazaaa` })
 
-        message.reply({ content: '<:boost:1117346767139254282> Veuillez verifier vos ***DMs*** !' })
+        message.reply({ content: '<:boost:1117346767139254282> Veuillez verifier vos ***DMs*** !' }) 
         message.react('💎')
-        message.member.send({ content: `https://discord.gg/YesU79pV5D`, embeds: [embed] });
+        message.member.send({ content: `https://discord.gg/wazaaa`, embeds: [embed] });
     }
 }
