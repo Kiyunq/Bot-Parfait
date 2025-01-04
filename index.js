@@ -14,8 +14,7 @@ const client = new Client({
     partials: ["USER", "CHANNEL", "GUILD_MEMBER", "MESSAGE", "REACTION"]
 });
 
-// Utiliser le token depuis config.js
-client.login(config.app.token);  // Remplacer par la variable dans config.js
+client.login(process.env.DISCORD_TOKEN);
 client.commands = new Collection();
 
 // Afficher la version de Node.js dans la console au démarrage
