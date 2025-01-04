@@ -18,11 +18,11 @@ module.exports = {
         const boost = message.guild.premiumSubscriptionCount || '0'
 
         const embed = new Discord.MessageEmbed()
-            .setTitle(`<:stats:994680111599194153>・__Stats de ${message.guild.name}__`)
-            .setURL('https://discord.gg/FAZgBcCj3t')
+            .setTitle(`<:stats:1325206111636164638>・__Stats de ${message.guild.name}__`)
+            .setURL('https://discord.gg/wazaaa')
             .setColor(color)
             .setThumbnail(message.guild.iconURL({ dynamic: true }))
-            .setDescription(`*Membres :* **${total}** <:membres:957097867334541352> \n*En ligne :* **${online}** <:Online:994698105662476290> \n*En vocal :* **${vocal}** <:voc:959943683413782568> \n*Boost :* **${boost}** <:Boost:994713215554560111>`)
+            .setDescription(`*Membres :* **${total}** <:members:1319725590408073226> \n*En ligne :* **${online}** <:Online:1325206378880569475> \n*En vocal :* **${vocal}** <:voc:1325206620195655812> \n*Boost :* **${boost}** <:Boost:1325206787124756553>`)
             .setFooter({ text: `` })
             .setTimestamp()
             .setFooter({ text: `Stats ${message.guild.name}` })
