@@ -1,4 +1,3 @@
-require('dotenv').config();  // Charge les variables d'environnement depuis .env
 
 module.exports = {
     app: {
