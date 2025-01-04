@@ -1,13 +1,15 @@
+require('dotenv').config();  // Charger les variables d'environnement à partir du fichier .env
+
 module.exports = {
     app: {
-        px: '-',
-        token: 'MTEzODU1OTg5OTUzNDYyNjgyNg.GJxSvk.tCN7LY3TrfoKwXinD3GZ8ZjIkH6uRuIE0pd6j4',
-        owners: '774361517042171924',
-        funny: '774361517042171924',
+        px: '+',
+        token: process.env.TOKEN,  // Charger le token depuis .env
+        owners: '1268356076504617037',
+        funny: '1268356076504617037',
         color: '#00001',
-        footer: 'Royaume Abus',
+        footer: '[+] Wazaaa',
         maxserver: '3',
         everyoneMention: false,
         hostedBy: true,
-        }
     }
+}
