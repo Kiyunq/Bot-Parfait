@@ -1,9 +1,9 @@
-require('dotenv').config();  // Charger les variables d'environnement à partir du fichier .env
+require('dotenv').config();  // Charge les variables d'environnement depuis .env
 
 module.exports = {
     app: {
         px: '+',
-        token: process.env.TOKEN,  // Charger le token depuis .env
+        token: process.env.DISCORD_TOKEN,  // Le token est récupéré depuis .env
         owners: '1268356076504617037',
         funny: '1268356076504617037',
         color: '#00001',
@@ -12,4 +12,4 @@ module.exports = {
         everyoneMention: false,
         hostedBy: true,
     }
-}
+};
