@@ -1,20 +1,24 @@
+require('dotenv').config();  // Charger les variables d'environnement à partir du fichier .env
+
 const { Client, Intents, guild, Collection } = require('discord.js');
-const Discord = require("discord.js")
-const config = require('./config')
-const { readdirSync } = require("fs")
-const db = require('quick.db')
-const p = new db.table("Prefix")
-const logembed = new db.table("embedlog")
-ms = require("ms")
-const color = config.app.color
+const Discord = require("discord.js");
+const { readdirSync } = require("fs");
+const db = require('quick.db');
+const p = new db.table("Prefix");
+const logembed = new db.table("embedlog");
+ms = require("ms");
+const color = '#00001';  // Laisse la couleur dans ton config si tu veux la garder statique
 const client = new Client({
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_BANS, Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS, Intents.FLAGS.GUILD_INTEGRATIONS, Intents.FLAGS.GUILD_WEBHOOKS, Intents.FLAGS.GUILD_INVITES, Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.GUILD_PRESENCES, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS, Intents.FLAGS.GUILD_MESSAGE_TYPING, Intents.FLAGS.DIRECT_MESSAGES, Intents.FLAGS.DIRECT_MESSAGE_REACTIONS, Intents.FLAGS.DIRECT_MESSAGE_TYPING],
     restTimeOffset: 0,
     partials: ["USER", "CHANNEL", "GUILD_MEMBER", "MESSAGE", "REACTION"]
 });
 
-client.login(config.app.token);
+// Utiliser le token depuis .env
+client.login(process.env.TOKEN);  // Remplacer par la variable d'environnement
 client.commands = new Collection();
+
+
 
 const { GiveawaysManager } = require('discord-giveaways');
 client.giveawaysManager = new GiveawaysManager(client, {
