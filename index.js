@@ -5,7 +5,6 @@ const { readdirSync } = require("fs");
 const db = require('quick.db');
 const p = new db.table("Prefix");
 const logembed = new db.table("embedlog");
-const port = process.env.PORT || 4000;
 ms = require("ms");
 const color = config.app.color;  // Utiliser la couleur depuis config.js
 const nodeVersion = config.app.nodeVersion;  // Utiliser la version de Node depuis config.js
