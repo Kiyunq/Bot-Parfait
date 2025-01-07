@@ -22,7 +22,7 @@ module.exports = {
             .setURL('https://discord.gg/wazaaa')
             .setColor(color)
             .setThumbnail(message.guild.iconURL({ dynamic: true }))
-            .setDescription(`*Membres :* **${total}** <:members:1319725590408073226> \n*En ligne :* **${online}** <:Online:1325206378880569475> \n*En vocal :* **${vocal}** <:voc:1325206620195655812> \n*Boost :* **${boost}** <:Boost:1325206787124756553>`)
+            .setDescription(`*Membres :* **${total}** <:members:1326287240338604062> \n*En ligne :* **${online}** <:Online:1326287798428499968> \n*En vocal :* **${vocal}** <:voc:1326287464687599778> \n*Boost :* **${boost}** <:Boost:1326287135715622913>`)
             .setFooter({ text: `` })
             .setTimestamp()
             .setFooter({ text: `Stats ${message.guild.name}` })
